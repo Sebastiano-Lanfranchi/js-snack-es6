@@ -21,9 +21,7 @@ var bicicletta = [
   }
 ];
 
-parseInt(bicicletta.peso);
-
-for(var i=0; i<6; i++){
-  var pesoMinore = Math.min(bicicletta.peso[i])
+for(var i=0; i < bicicletta.length; i++){
+  var pesoMinore = Math.min(bicicletta[i].peso)
 }
 console.log(pesoMinore)
