@@ -24,4 +24,4 @@ var bicicletta = [
 for(var i=0; i < bicicletta.length; i++){
   var pesoMinore = Math.min(bicicletta[i].peso)
 }
-console.log(pesoMinore)
+console.log('la bicicletta piú leggera é' + bicicletta[bicicletta.indexOf(pesoMinore)].nome + pesoMinore)
