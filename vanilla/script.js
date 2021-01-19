@@ -1,4 +1,4 @@
-var bicicletta = [
+const bicicletta = [
   {
     'nome': 'Fulmine',
     'peso': 28
@@ -21,7 +21,12 @@ var bicicletta = [
   }
 ];
 
-for(var i=0; i < bicicletta.length; i++){
-  var pesoMinore = Math.min(bicicletta[i].peso)
+let biciLeggera = bicicletta[0]
+
+for(let x = 1; x < bicicletta.length; x++) {
+  if(bicicletta[x].peso < biciLeggera.peso) {
+    biciLeggera = bicicletta[x]
+  }
 }
-console.log('la bicicletta piú leggera é' + bicicletta[bicicletta.indexOf(pesoMinore)].nome + pesoMinore)
+
+console.log(biciLeggera);
