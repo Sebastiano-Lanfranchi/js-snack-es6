@@ -30,3 +30,5 @@ for(var x=0; x<squadre.length; x++){
   squadre[x]['Punti fatti'] = randomNumber(1, 20);
   squadre[x]['falli subiti'] = randomNumber(1, 20);
 }
+
+console.log()
